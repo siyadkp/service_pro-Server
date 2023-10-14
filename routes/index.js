@@ -9,6 +9,8 @@ router.get('/',usercontroller.dataFetchFromDatabase)
 
 router.get('/add',usercontroller.insertDataToDatabse)
 
-router.post('/email',emai.otpV)
+router.post('/continue with google')
+
+router.post('/continue with apple')
 
 module.exports = router;

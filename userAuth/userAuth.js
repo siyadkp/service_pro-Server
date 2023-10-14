@@ -8,10 +8,6 @@ const otpSender = require('node-otp-sender');
 
 const otpV= 
 (req,res)=> {
-    const senderEmail = 'siyadkottakkal@gmail.com';
-const senderPassword = '12345';
-const recipientEmail = 'siyadkottakkal@gmail.com';
-const subject = 'OTP Verification';
   otpSender(senderEmail, senderPassword, recipientEmail, subject)
   .then((response) => {
     console.log(response);
